@@ -83,12 +83,12 @@ public class SWT4 {
                     prod = estoque.consultarProduto(sc.nextInt());
                     int quant = sc.nextInt();
                     
-                    //if(prod !=null && prod.getQuantidade() < quant){
+                    if(prod !=null && prod.getQuantidade() >= quant){
                         prod.setQuantidade(quant);
                         caixa.adicionarALista(prod);
-                    //}else{
-                        //System.out.println("Quantidade em estoque é inferior a desejada");
-                    //}
+                    }else{
+                        System.out.println("Quantidade em estoque é inferior a desejada");
+                    }
                     System.out.println("1- Para adicionar outro produto ou 0 - Para retornar ao Menu");
                     p = sc.nextInt();
                 }

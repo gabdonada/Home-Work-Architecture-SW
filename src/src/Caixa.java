@@ -18,12 +18,19 @@ public class Caixa {
     }
     
     public void remoderDaLista(int p){
+        boolean encontrouProd = false;
         for (int i = 0; i < listaDeCompras.size(); i++) {
             if(listaDeCompras.get(i).getCodigo() == p){
                 listaDeCompras.remove(i);
+                encontrouProd = true;
             }
         }
-        System.out.println("Removido com sucesso.");
+        if(encontrouProd){
+            System.out.println("Removido com sucesso.");
+        }else{
+              System.out.println("Produto não encontrado.");
+        }
+    
     }
     
     public ArrayList<Produto> finalizarCompra(){

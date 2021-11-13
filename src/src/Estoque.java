@@ -34,9 +34,7 @@ public class Estoque {
                 produtos.set(i, prod);
             }
             break;
-        }
-        
-        System.out.println("Produto "+prod.getCodigo()+" não encontrado.");                    
+        }        
     }
     
     public Produto consultarProduto(int cod){
