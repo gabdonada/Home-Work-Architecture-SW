@@ -7,7 +7,21 @@ public class Estoque {
     private ArrayList<Produto> produtos = new ArrayList<>();
 
     public void adicionarAoEstoque(Produto prod){
-        produtos.add(prod);
+        Produto prodExiste = prod;
+        boolean existe = false;
+        for(Produto p : produtos){
+            if(p.getCodigo() == prod.getCodigo()){
+                prodExiste = p;
+                existe = true;
+            }
+        }
+        
+        if(existe){
+            System.out.println("Codigo ja existente no estoque: "+ prodExiste);
+        }
+        else{
+            produtos.add(prod);
+        }
     }
     
     public void subtrairDoEstoque(int codigo, int quantidade){
