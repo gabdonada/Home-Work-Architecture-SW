@@ -24,9 +24,7 @@ public class Estoque {
                     System.out.println("Quantidade do produto "+codigo+" insuficiente. Quantidade atual: "+produto.getQuantidade());                    
                 }
             }
-        }
-        
-        System.out.println("Produto "+codigo+" não encontrado.");                    
+        }                    
         
     }
     

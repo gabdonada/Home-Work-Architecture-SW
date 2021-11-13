@@ -35,7 +35,7 @@ public class Caixa {
         }
         
         System.out.println("Valor a pagar: "+valorTotal);
-        
+
         return listaDeCompras;
     }
     

@@ -116,7 +116,7 @@ public class SWT4 {
                 
             case 8:
                 System.out.println("---- Movimentação Estoque ----");
-                mocEstoque.toString();
+                mocEstoque.listarEstoque();
                 break;
         
             case 9:

@@ -11,9 +11,12 @@ public class MovimentacaoEstoque {
             movimentacao.add(p);
         }
     }
-
-    @Override
-    public String toString() {
-        return "MovimentacaoEstoque{" + "Movimentacao = " + movimentacao + '}';
+    
+    public void listarEstoque(){   
+        for(Produto p : movimentacao){
+            System.out.println("Movimentacao: codigo = "+p.getCodigo()+", Nome = "+p.getNome()+", Categoria = "+p.getCategoria()
+                    +", Vencimento = "+p.getVencimento()+", Quantidade = "+p.getQuantidade()+", Valor = "+p.getValorUnit());
+        }
     }
+    
 }
